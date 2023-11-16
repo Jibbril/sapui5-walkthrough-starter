@@ -4,10 +4,8 @@
 
 sap.ui.define([
         "sap/ui/core/UIComponent",
-        "sap/ui/Device",
-        "ns/walkthroughstarter/model/models"
     ],
-    function (UIComponent, Device, models) {
+    function (UIComponent) {
         "use strict";
 
         return UIComponent.extend("ns.walkthroughstarter.Component", {
@@ -26,9 +24,6 @@ sap.ui.define([
 
                 // enable routing
                 this.getRouter().initialize();
-
-                // set the device model
-                this.setModel(models.createDeviceModel(), "device");
             }
         });
     }

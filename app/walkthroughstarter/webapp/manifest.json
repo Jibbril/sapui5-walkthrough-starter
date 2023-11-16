@@ -14,17 +14,6 @@
       "id": "@sap/generator-fiori:basic",
       "version": "1.10.6",
       "toolsId": "a59618af-561a-44f4-85f9-2e958005a13a"
-    },
-    "dataSources": {
-      "mainService": {
-        "uri": "/odata/v4/my/",
-        "type": "OData",
-        "settings": {
-          "annotations": [],
-          "localUri": "localService/metadata.xml",
-          "odataVersion": "4.0"
-        }
-      }
     }
   },
   "sap.ui": {
@@ -44,7 +33,7 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": true,
+    "flexEnabled": false,
     "dependencies": {
       "minUI5Version": "1.120.1",
       "libs": {
@@ -68,25 +57,9 @@
         "settings": {
           "bundleName": "ns.walkthroughstarter.i18n.i18n"
         }
-      },
-      "": {
-        "dataSource": "mainService",
-        "preload": true,
-        "settings": {
-          "synchronizationMode": "None",
-          "operationMode": "Server",
-          "autoExpandSelect": true,
-          "earlyRequests": true
-        }
       }
     },
-    "resources": {
-      "css": [
-        {
-          "uri": "css/style.css"
-        }
-      ]
-    },
+    "resources": {},
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",
